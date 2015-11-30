@@ -1,7 +1,9 @@
-package enyeinteractive.com.bluetoothanalyzer;
+package enyeinteractive.com.bluetoothanalyzer.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import enyeinteractive.com.bluetoothanalyzer.R;
 
 
 public class MainActivity extends AppCompatActivity {
