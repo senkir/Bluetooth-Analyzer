@@ -20,13 +20,13 @@ public class Service  extends BaseModel {
 
     @Column
     @PrimaryKey(autoincrement = true)
-    long id;
+    public long id;
 
     @Column
-    String uuid;
+    public String uuid;
 
     @Column
-    String alias;
+    public String alias;
 
     @Column
     @ForeignKey(references = {@ForeignKeyReference(columnName = "device_id",
@@ -34,6 +34,10 @@ public class Service  extends BaseModel {
             foreignColumnName = "id")},
             saveForeignKeyModel = false)
     ForeignKeyContainer<Device> deviceContainer;
+
+    public Device getDevice() {
+        return deviceContainer.toModel();
+    }
 
     List<Characteristic> characteristics;
 

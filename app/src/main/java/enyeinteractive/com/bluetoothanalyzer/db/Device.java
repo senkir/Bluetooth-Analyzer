@@ -20,13 +20,13 @@ public class Device extends BaseModel {
 
     @Column
     @PrimaryKey(autoincrement = true)
-    long id;
+    public long id;
 
     @Column
-    String macAddress;
+    public String macAddress;
 
     @Column
-    String alias;
+    public String alias;
 
     List<Service> services;
 
